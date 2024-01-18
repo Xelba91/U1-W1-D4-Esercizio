@@ -16,7 +16,7 @@ hr {display: none;} /* rimuove l'elemento */
 
 /* HEADER */
 header {
-    background: linear-gradient(90deg, rgba(14,125,130,1) 31%, rgba(8,150,179,1) 100%);
+    background: linear-gradient(180deg, rgb(1, 164, 204) 0%, rgb(2, 113, 138) 68%);
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
@@ -71,6 +71,12 @@ h1 {
 }
 p, address, ul, ol, dl, blockquote {
     margin-bottom: 1.2em;
+    list-style: inside;
+    /* per cerchi nelle liste */
+}
+/* per numeri alle liste con reset.css */
+ol {
+    list-style: decimal;
 }
 /* colore icone e testo vicino */
 h1 + p {
@@ -140,5 +146,40 @@ button {
 }
 
 /* ELEMENTI NELL' ASIDE */
+/* articoli correlati */
+aside h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+}
+ aside div {
+    margin-bottom: 1em;
+    padding: 1em; 
+    background-color: #e3e2e2;
+    border: 1px solid #c4c3c3;
+    
+    
+}
+aside div p:last-child {
+    text-align: right;
+    margin-bottom: 0;
+    font-size: 0.8em;
+    
+
+}
 
 /* FOOTER */
+footer {
+    background: rgb(53,53,53);
+    background: linear-gradient(0deg, rgb(60, 60, 60) 0%, rgb(4, 71, 86) 68%);
+    padding: 1em;
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 4px #666;
+}
+footer a {
+    color: fuchsia;
+}
